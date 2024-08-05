@@ -24,20 +24,21 @@ html {
   padding: 10px 20px;
   padding-right: 50px;
   display: flex;
-  justify-content: right;
   align-items: center;
   color: white;
   width: 60%;
   height: 50px;
   border-radius: 50px;
   border: 1px solid #ffffff7d;
+  
+justify-content: space-between
 }
 .sign-in-container {
-  margin-top: -66px;
+  
   /* margin-right: -859px; */
-  display: flex;
-  justify-content: right;
-  align-items: center;
+ 
+  
+
 }
 
 .sign-in-container button {

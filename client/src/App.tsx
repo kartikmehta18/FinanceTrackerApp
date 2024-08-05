@@ -4,6 +4,7 @@ import Dashboard from "./Pages/dashboard";
 import Auth from "./Pages/auth";
 import { FinincialRecordsProvider } from "./context/financial-record-context";
 import { SignedIn, UserButton } from "@clerk/clerk-react";
+import Foot from "./Foot";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path="/" element={<Auth />} />
         </Routes>
       </div>
+      {/* <Foot/> */}
     </Router>
   );
 }

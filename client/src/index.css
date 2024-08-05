@@ -12,6 +12,13 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.fo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
 .hero {
   display: flex;
   flex-direction: column;
@@ -57,6 +64,23 @@ h2 {
   
   
 }
+.hi{
+  background: -webkit-linear-gradient(rgb(238, 238, 238), rgb(54, 188, 247));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3.2em;
+  line-height: 1.3;
+}
+
+/* .sm{
+  display: flex;
+} */
+
+.chr{
+  height: 1px;
+  width:80%;
+  background-color: #ffffff;
+}
 
 button {
   border-radius: 8px;
@@ -93,17 +117,28 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
-
-@media(max-width: 600px) {
+/* Styles for large smartphones (max-width: 600px) */
+@media (max-width: 600px) {
   h1 {
-    font-size: 2.5em;
+      font-size: 2.5em;
   }
   h2 {
-    margin-right: 90px;
-    font-size: 1.em;
+      margin-right: 90px;
+      font-size: 1em;
   }
   button {
-    padding: 0.5em 1em;
+      padding: 0.5em 1em;
+  }
+  .navbar {
+      height: 30px;
+  }
+  .iauth {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
   }
 }
 
@@ -121,5 +156,78 @@ button:focus-visible {
   .navbar{
     height: 20px;
   }
+  .iauth{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:100% ;
+    width:100% ;
+  }
+  .sign-in-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: center ;
+
+
+  }
+  button{
+    font-weight: 100;
+    font-size: 0.8em;
+
+    padding: 1px 1px;
+  }
+  .navbar{
+    height: 15px;
+    width: 250px;
+  }
+  .txt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin-left: 4px;
+  }
 }
+
+/* Styles for large tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  h1 {
+      font-size: 2.75em;
+  }
+  h2 {
+     
+      font-size: 1.3em;
+  }
+  button {
+      padding: 0.8em 1.6em;
+  }
+  .navbar {
+      height: 50px;
+  }
+}
+  
+
+
+/* Styles for medium tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  h1 {
+      font-size: 2.5em;
+  }
+  h2 {
+      
+      font-size: 1.2em;
+  }
+  button {
+      padding: 0.7em 1.4em;
+  }
+  .navbar {
+      height: 40px;
+  }
+}
+
+
 

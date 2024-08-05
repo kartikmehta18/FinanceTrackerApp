@@ -2,6 +2,8 @@ import { useFincialRecords ,FinancialRecord} from "../../context/financial-recor
 import {useTable, Column, CellProps, } from "react-table"
 
 import React, { useMemo, useState } from "react";
+import Foot from "../../Foot";
+import { Link } from "react-router-dom";
 // funcnal component
 interface EditableCellProps extends CellProps<FinancialRecord> {
   updateRecord: (rowIndex: number, columnId: string, value: any) => void;
@@ -130,7 +132,7 @@ export const  FinancialRecordList= ()=> {
     columns,
     data: records
   });
-  return (
+  return (<>
     <div className="table-container">
     <table {...getTableProps()} className="table">
       <thead>
@@ -156,5 +158,8 @@ export const  FinancialRecordList= ()=> {
       </tbody>
       </table>
     </div>
+    <hr className='chr'></hr>
+    <div className="fo">Made by ❤️<Link to ="https://github.com/kartikmehta18" target="_blank"> kartikmehta18</Link></div>
+    </>
   )
 }

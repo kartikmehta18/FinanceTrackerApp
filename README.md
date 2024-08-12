@@ -1,1 +1,1 @@
-This is Finance Tracker App
+# This is Finance Tracker App

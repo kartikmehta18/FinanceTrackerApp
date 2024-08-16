@@ -2,7 +2,7 @@ import { useFincialRecords ,FinancialRecord} from "../../context/financial-recor
 import {useTable, Column, CellProps, } from "react-table"
 
 import React, { useMemo, useState } from "react";
-import Foot from "../../Foot";
+
 import { Link } from "react-router-dom";
 // funcnal component
 interface EditableCellProps extends CellProps<FinancialRecord> {
@@ -145,7 +145,7 @@ export const  FinancialRecordList= ()=> {
         ))}
       </thead>
       <tbody {...getTableBodyProps()}>
-        {rows.map((row, idx) => {
+        {rows.map((row,) => {
           prepareRow(row);
           return (
             <tr {...row.getRowProps()}>

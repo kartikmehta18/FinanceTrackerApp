@@ -1,10 +1,9 @@
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route,  } from "react-router-dom";
 import "./App.css";
 import Dashboard from "./Pages/dashboard";
 import Auth from "./Pages/auth";
 import { FinincialRecordsProvider } from "./context/financial-record-context";
 import { SignedIn, UserButton } from "@clerk/clerk-react";
-import Foot from "./Foot";
 
 function App() {
   return (
